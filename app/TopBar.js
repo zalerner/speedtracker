@@ -21,6 +21,9 @@ class TopBar extends React.Component {
             <Logo width={40}/>
             <LogoTitle width={140}/>
           </a>
+          <a href="https://www.barrelny.com">
+            <LogoBarrel width={140}/>
+          </a>
           <div className="c-TopBar__nav">
             <p>
               Viewing 
