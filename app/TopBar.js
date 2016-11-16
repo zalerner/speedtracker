@@ -3,6 +3,7 @@ import { render } from 'react-dom'
 
 import Logo from './Logo'
 import LogoTitle from './LogoTitle'
+import LogoBarrel from './LogoBarrel'
 
 class TopBar extends React.Component {
   _onPeriodChange(event) {
