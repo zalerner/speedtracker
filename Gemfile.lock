@@ -47,3 +47,6 @@ PLATFORMS
 DEPENDENCIES
   jekyll (= 3.1.6)
   jekyll-github-metadata
+
+BUNDLED WITH
+   1.13.6
