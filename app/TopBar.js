@@ -18,12 +18,12 @@ class TopBar extends React.Component {
     return (
       <div className="c-TopBar">
         <div className="c-TopBar__inner">
-          <a href="https://speed.barrelny.com">
+          <a href="http://speed.barrelny.com">
             <Logo width={40}/>
             <LogoTitle width={140}/>
           </a>
           <span>&nbsp;x&nbsp;&nbsp;</span>
-          <a href="https://speed.barrelny.com">
+          <a href="http://speed.barrelny.com">
             <LogoBarrel width={60}/>
           </a>
           <div className="c-TopBar__nav">
