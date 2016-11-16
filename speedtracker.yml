@@ -79,16 +79,16 @@ wptKey: "366a01b6ee241d2bfb5d270e054be984a711e5605ffd4da7ebb829df0a2d1084de66"
 #                                                                             #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-alerts:
-  emailAlert:
-    type: "email"
-    recipients: ["0d2506eea47a1a60f30f332d044bffc6f14de97d44f814f2"]
+#alerts:
+#  emailAlert:
+#    type: "email"
+#    recipients: ["0d2506eea47a1a60f30f332d044bffc6f14de97d44f814f2"]
 #  otherEmailAlert:
 #    type: "email"
 #    recipients: ["ENCRYPTED_EMAIL_ADDRESS2", "ENCRYPTED_EMAIL_ADDRESS3"]
-   slackAlert:
-     type: "slack"
-     hookUrl: "1f3011f5f92c503df5052e061504fed8f542ec2a09f416b0adef6ecf552c16949005b130ae3b6f33ab0af782ebebd56540bd255ac725c1bc7f42521c8668f6e333d0a7f499ce974ad44e838d6f"
-     channel: "#speed"
-     username: "slackbot"
-     iconEmoji: ":grimacing:"
+#   slackAlert:
+#     type: "slack"
+#     hookUrl: "1f3011f5f92c503df5052e061504fed8f542ec2a09f416b0adef6ecf552c16949005b130ae3b6f33ab0af782ebebd56540bd255ac725c1bc7f42521c8668f6e333d0a7f499ce974ad44e838d6f"
+#     channel: "#speed"
+#     username: "slackbot"
+#     iconEmoji: ":grimacing:"
