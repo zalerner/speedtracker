@@ -2,7 +2,7 @@
 
 # Overview
 
-These instructions apply to the management of Barrel's SpeedTracker instance. If you'd like to set up your own instance of SpeedTracker view the "Installation" section of the readme at the official SpeedTracker repo [here](https://github.com/speedtracker/speedtracker/).
+These instructions apply to the management of [Barrel's SpeedTracker instance](http://speed.barrelny.com/). If you'd like to set up your own instance of SpeedTracker view the "Installation" section of the readme at the official SpeedTracker repo [here](https://github.com/speedtracker/speedtracker/).
 
 ---
 
@@ -15,15 +15,28 @@ Tests are scheduled to run at intervals specified within their profile; however,
     1. Github username (zalerner)
     1. Github repository (speedtracker)
     1. Github branch (master)
-    1. Profile ID - The name of the html file in the \_profiles directory that you wish to test (e.g. caruso)
+    1. Profile ID - The name of the html file in the \_profiles directory that you wish to test (i.e. default, caruso, era, etc.)
     1. Encryption key - Available on 1Pass
 1. Click "RUN TEST"
 1. Wait for confirmation in the gray box to the right of the credentials
-1. Check the site to see your results
+1. Check the [site](http://speed.barrelny.com/) to see your results
 
 ---
 
 ## Monitor New Pages
+
+In order to monitor a new page you'll need to clone and edit one of the existing html files in the \_profiles directory. Each profile represents one page of a site being monitored. These html files allow you to configure the following for the page being measured:
+
+1. Human friendly profile name
+1. Automated testing interval
+1. WebPageTest test settings
+1. URL being tested
+1. Metrics tracked
+1. Budgets for each metric
+1. Alerts triggered when budgets are exceeded
+
+Additional information on setting the connectivity and location parameters for WPT can be found [here](https://sites.google.com/a/webpagetest.org/docs/advanced-features/webpagetest-restful-apis#TOC-Specifying-connectivity).
+
 ---
 
 ## Develop Locally
