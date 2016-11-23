@@ -61,7 +61,7 @@ budgets:
   -
     metric: TTFB
     max: 600
-    alerts: ["emailAlert", "slackAlert", *newEmailAlert*]
+    alerts: ["emailAlert", "slackAlert", "newEmailAlert"]
 ```
 
 ---
