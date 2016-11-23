@@ -7,6 +7,20 @@ These instructions apply to the management of Barrel's SpeedTracker instance. If
 ---
 
 ## Run a Test
+
+Tests are scheduled to run at intervals specified within their profile; however, tests can also be executed manually from the [official SpeedTracker site](https://speedtracker.org/test):
+
+1. Visit [speedtracker.org/test](https://speedtracker.org/test)
+1. Enter the following credentials:
+    1. Github username (zalerner)
+    1. Github repository (speedtracker)
+    1. Github branch (master)
+    1. Profile ID - The name of the html file in the \_profiles directory that you wish to test (e.g. caruso)
+    1. Encryption key - Available on 1Pass
+1. Click "RUN TEST"
+1. Wait for confirmation in the gray box to the right of the credentials
+1. Check the site to see your results
+
 ---
 
 ## Monitor New Pages
@@ -14,7 +28,7 @@ These instructions apply to the management of Barrel's SpeedTracker instance. If
 
 ## Develop Locally
 
-Should you want to make changes to the app itself, use the following instructions to get the app up and running locally:
+While changes to profiles and notification settings can be easily made within GitHub, editing the app's layout, styling, and functionality require bundling the app for production. Should you want to make changes to the app itself, use the following instructions to get the app up and running locally:
 
 1. Install dependencies
 
