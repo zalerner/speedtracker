@@ -1,26 +1,20 @@
-<img src="https://speedtracker.org/assets/images/logo-full-square-inverted.png" width="300">
+<img src="https://s12.postimg.org/5f5867zil/Screen_Shot_2016_11_23_at_4_39_41_PM.png">
 
-# Front-end
+# Overview
 
-> v1.0.1
-
-*Visualisation layer and data store for SpeedTracker*
+These instructions apply to the management of Barrel's SpeedTracker instance. If you'd like to set up your own instance of SpeedTracker view the "Installation" section of the readme at the official SpeedTracker repo [here](https://github.com/speedtracker/speedtracker/).
 
 ---
 
-## Installation
+## Run a Test
+---
 
-1. [Click here](https://www.webpagetest.org/getkey.php) to request a WebPageTest API key.
-1. Fork this repository into your own GitHub account or organisation.
-1. Enable GitHub Pages for the repository under *Settings* > *Options* > *GitHub Pages*. Select the branch you want to serve your site from (typically **master**).
-1. Add **speedtracker-bot** as a collaborator on your repository (under *Settings* > *Collaborators*).
-1. Use the [connect tool](https://speedtracker.org/connect) to establish a connection between SpeedTracker and your repository.
-1. Edit the main configuration file (`speedtracker.yml`).
-1. Edit `_profiles/default.html` to define your first profile.
-1. Commit and push the changed files.
-1. Use the [test tool](https://speedtracker.org/test) to run a test.
+## Monitor New Pages
+---
 
-## Development
+## Develop Locally
+
+Should you want to make changes to the app itself, use the following instructions to get the app up and running locally:
 
 1. Install dependencies
 
