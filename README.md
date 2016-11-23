@@ -29,17 +29,46 @@ In order to monitor a new page you'll need to clone and edit one of the existing
 
 1. Human friendly profile name
 1. Automated testing interval
-1. WebPageTest test settings
+1. WebPageTest test settings\*
 1. URL being tested
 1. Metrics tracked
 1. Budgets for each metric
 1. Alerts triggered when budgets are exceeded
 
-Additional information on setting the connectivity and location parameters for WPT can be found [here](https://sites.google.com/a/webpagetest.org/docs/advanced-features/webpagetest-restful-apis#TOC-Specifying-connectivity).
+\*Additional information on setting the connectivity and location parameters for WPT can be found [here](https://sites.google.com/a/webpagetest.org/docs/advanced-features/webpagetest-restful-apis#TOC-Specifying-connectivity).
+
+---
+
+## Edit Notifications
+
+To receive email notifications when a metric on a specific profile has gone over budget:
+
+1. Add a new block of alert code to speedtracker.yml following this format:
+
+```
+  otherEmailAlert:
+    type: "email"
+    recipients: ["ENCRYPTED_EMAIL_ADDRESS2", "ENCRYPTED_EMAIL_ADDRESS3"]
+```
+1. Make sure the name of the alert is unique and the indent spacing matches the other blocks
+1. Encrypt the email addresses you'll be adding one at a time using the official SpeedTracker encryption tool [here](https://speedtracker.org/encrypt) (encryption key available on 1pass)
+1. Add the encrypted email to the recipients list of the master "emailAlert"
+1. Make sure each email you add is wrapped in double quotes and separated by a comma and a space
+1. Add the name of your new alert to the metric in the relevant profile, for example:
+
+```
+budgets:
+  -
+    metric: TTFB
+    max: 600
+    alerts: ["emailAlert", "slackAlert", *newEmailAlert*]
+```
 
 ---
 
 ## Develop Locally
+
+NOTE: Make sure to fetch and pull from origin master religiously as automated tests are regularly committed by the SpeedTracker bot.
 
 While changes to profiles and notification settings can be easily made within GitHub, editing the app's layout, styling, and functionality require bundling the app for production. Should you want to make changes to the app itself, use the following instructions to get the app up and running locally:
 
