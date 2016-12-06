@@ -47,18 +47,18 @@ parameters:
 budgets:
   -
     metric: TTFB
-    max: 600
-    alerts: ["emailAlert", "slackAlert"]
+    max: 700
+#    alerts: ["emailAlert", "slackAlert"]
   -
     metric: firstPaint
-    max: 2000
-    alerts: ["slackAlert"]
+    max: 1000
+#    alerts: ["slackAlert"]
   -
     metric: visualComplete
-    max: 3500
-    alerts: ["slackAlert"]
+    max: 2000
+#    alerts: ["slackAlert"]
   -
     metric: SpeedIndex
-    max: 2500
-    alerts: ["slackAlert"]
+    max: 1000
+#    alerts: ["slackAlert"]
 ---
