@@ -22,9 +22,17 @@ interval: 12
 # WebPageTest test parameters
 #
 parameters:
-  connectivity: "Cable"
+  connectivity: "custom"
   location: "Dulles:Chrome"
+  mobile: 1
   runs: 1
+  medianMetric: loadTime
+  bwdown: 7930
+  bwup: 7930
+  latency: 85
+  plr: 0
+  video: 1
+  mv: 1
   url: "https://develop-caruso-corporate.pantheonsite.io"
 
 #
@@ -40,17 +48,17 @@ budgets:
   -
     metric: TTFB
     max: 600
-    alerts: ["emailAlert", "slackAlert"]
+#    alerts: ["emailAlert", "slackAlert"]
   -
     metric: firstPaint
     max: 2000
-    alerts: ["slackAlert"]
+#    alerts: ["slackAlert"]
   -
     metric: SpeedIndex
     max: 3000
-    alerts: ["slackAlert"]
+#    alerts: ["slackAlert"]
   -
     metric: visualComplete
     max: 6000
-    alerts: ["slackAlert"] 
+    alerts: ["emailAlert", "slackAlert"] 
 ---
