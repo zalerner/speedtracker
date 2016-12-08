@@ -24,11 +24,12 @@ interval: 12
 parameters:
   connectivity: "custom"
   location: "Dulles:Chrome"
+  mobile: 1
   runs: 5
   medianMetric: loadTime
-  bwdown: 12000
-  bwup: 12000
-  latency: 70
+  bwdown: 7930
+  bwup: 7930
+  latency: 85
   plr: 0
   video: 1
   mv: 1
@@ -47,17 +48,17 @@ budgets:
   -
     metric: TTFB
     max: 600
-    alerts: ["emailAlert", "slackAlert"]
+#    alerts: ["slackAlert"]
   -
     metric: firstPaint
     max: 2000
-    alerts: ["slackAlert"]
+#    alerts: ["slackAlert"]
   -
     metric: visualComplete
     max: 3500
-    alerts: ["slackAlert"]
+    alerts: ["emailAlert", "slackAlert"]
   -
     metric: SpeedIndex
     max: 2500
-    alerts: ["slackAlert"]
+#    alerts: ["slackAlert"]
 ---
